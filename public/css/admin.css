@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap");
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",'sans-serif';
+}
+a{
+    text-decoration: none;
+}
+.admin-container{
+    display: grid;
+    grid-template-areas: "m m n n n n n n n n n n"
+    "m m c c c c c c c c c c";
+    min-height: 100vh;
+   grid-gap: 10px;
+}
+.menu{
+    grid-area: m;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px 0 0 25px;
+ 
+}
+.logo-item {
+    flex: 1;
+    padding-top: 1rem;
+}
+.logo-item a{
+    color: white;
+    font-size: 1.2rem;
+}
+.logo-item span{
+    color: yellow;
+    font-size: 1.2rem;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   flex: 2;
+}
+.dummy2{
+    flex: 1;
+}
+.menu-item a{
+    color: white;
+    font-size: 1rem ;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+}
+.menu-item i{
+    margin-right: 1rem;
+}
+.social-item a{
+    color: white;
+    text-decoration: underline;
+    font-size: .5rem;
+}
+.navbar{
+    grid-area: n;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: start;
+}
+.navbar h3{
+    font-size: 1.2rem;
+    line-height: 1;
+}
+.navbar p{
+    font-size: .8rem;
+
+    line-height: 1;
+}
+.navbar i{
+    margin-right: 1rem;
+}
+.content-box{
+    grid-area: c;
+    background-color: white;
+    color: black;
+    align-self: start;
+}
+th,td{
+    padding: 1rem;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Solution</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+   
+  </head>
+  <body>
+    <div class="menu" id="myMenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <div class="overlaynav">
+        <a href="#serviceContainer">Services</a>
+        <a href="#aboutContainer">About</a>
+        <a href="#offerContainer">Offers</a>
+        <a href="#contactContainer">Contact</a>
+      </div>
+    </div>
+    <section class="maincontainer" id="homeContainer">
+      <div class="headercontainer">
+        <div class="nav" id="myNav">
+          <div class="logo">
+            <a href="">muening<span>.</span></a>
+          </div>
+          <div class="dummy"></div>
+          <div class="callus">
+            <div class="callusbox1">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="callusbox2">
+              <p>Call Us</p>
+              <p>+6280119821</p>
+            </div>
+          </div>
+          <div class="icon">
+            <a onclick="openNav()" class=""><i class="fas fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="title">
+          <div class="titlebox1">
+            <div class="titlesubbox1">
+              <p><i class="fas fa-home"></i>TUKAN NANDANI HOMA</p>
+              <h1>
+                Modern & Prestigious <br />
+                Home Solutions
+              </h1>
+            </div>
+            <div class="titlesubbox2">
+              <div class="titleformbox">
+                <h3>Request Schedule to Estimate</h3>
+                <form action="/schdule" method="post">
+                  <label for="">Full Name</label><br />
+                  <input class="textname" type="text" name="name" id="" />
+                  <input
+                    class="phoneno"
+                    type="text"
+                    name="phone"
+                    id=""
+                    placeholder="Phone Number"
+                  />
+                  <select name="option" id="">
+                    <option value="Interior">Interior</option>
+                    <option value="Paint">Paint</option>
+                    <option value="Siding">Siding</option>
+                    <option value="Other">Other</option></select
+                  ><br />
+                  <textarea
+                    name="pDesc"
+                    id=""
+                    cols="30"
+                    rows="3"
+                    placeholder="Short Description of Project"
+                  ></textarea>
+                  <button type="submit" class="homebtn">Get Schdule</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="titlebox2">
+            <div class="titlesubbox3">
+              <i class="fas fa-swatchbook"></i>
+              <h4>Interior Design</h4>
+              <p>Consecture dummy content</p>
+            </div>
+            <div class="titlesubbox4">
+              <i class="fas fa-paint-roller"></i>
+              <h4>Room Makeover</h4>
+              <p>Consecture dummy content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profilebox1">
+          <div class="counter counter1" data-target="11">0</div>
+          <p>Years Business in</p>
+        </div>
+        <div class="profilebox2">
+          <div class="counter counter2" data-target="1961">0</div>
+          <p>Projects Achivement</p>
+        </div>
+        <div class="profilebox3">
+          <div class="counter counter3" data-target="34">0</div>
+          <p>States Licence in</p>
+        </div>
+      </div>
+    </section>
+    <section class="servicecontainer" id="serviceContainer">
+      <div class="servicetextbox">
+        <div class="servicetextbox1">
+          <h2>Our Best Services</h2>
+          <p>All casing consetures dummy content</p>
+        </div>
+        <div class="servicetextbox2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quas
+            quo velit tempore iusto deserunt optio ratione quis eum! Itaque odit
+            totam cum ipsum illum quas id eius eaque optio?
+          </p>
+        </div>
+      </div>
+      <div class="serviceimagebox">
+        <div class="serviceimagesinnerbox1">
+          <div class="serviceimagesubbox">
+            <img src="/public/images/kitchen.jpg" alt="" srcset="" />
+            <div class="serviceimagetextblock">
+              <a href="" class="textblock">Kitchen</a
+              ><a href="" class="arrowicon"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="serviceimagesubbox">
+            <img src="/public/images/baths.jpg" alt="" srcset="" />
+            <div class="serviceimagetextblock">
+              <a href="" class="textblock">Baths</a
+              ><a href="" class="arrowicon"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="serviceimagesubbox">
+            <img src="/public/images/siding.jpg" alt="" srcset="" />
+            <div class="serviceimagetextblock">
+              <a href="" class="textblock">Siding</a
+              ><a href="" class="arrowicon"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="serviceimagesinnerbox2">
+          <div class="serviceimagesubbox2">
+            <img src="/public/images/additions1.jpg" alt="" srcset="" />
+            <div class="serviceimagetextblock">
+              <a href="" class="textblock">Additions</a
+              ><a href="" class="arrowicon"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="serviceimagesubbox2">
+            <img src="/public/images/masonry.jpg" alt="" srcset="" />
+            <div class="serviceimagetextblock">
+              <a href="" class="textblock">Masonry</a
+              ><a href="" class="arrowicon"
+                ><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aboutcontainer" id="aboutContainer">
+      <div class="aboutcolumn1">
+        <h2>Why Choose Us</h2>
+        <p>All casing sonsectures dummy content</p>
+      </div>
+      <div class="aboutcolumn2">
+        <div class="aboutbox1">
+          <div class="aboutsubbox">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>We're Locally Based</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+          <div class="aboutsubbox aboutsubmiddle">
+            <i class="fas fa-tag"></i>
+            <h3>We Fit Your Budget</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+          <div class="aboutsubbox">
+            <i class="fas fa-certificate"></i>
+            <h3>We're Certified Experts</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+        </div>
+        <div class="aboutbox2">
+          <div class="aboutsubbox">
+            <i class="fas fa-users"></i>
+            <h3>We Treat You Like Family</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+          <div class="aboutsubbox aboutsubmiddle">
+            <i class="fas fa-thumbs-up"></i>
+            <h3>We Have Rave Reviews</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+          <div class="aboutsubbox">
+            <i class="far fa-comment-dots"></i>
+            <h3>Good Feedback</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur, nam? Aspernatur quidem nihil doloribus cumque.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="aboutcolumn3">
+        <div class="aboutbtn1">
+          <a href="" class="aboutbtntext">Learn More</a
+          ><a href="" class="aboutbtnarow"
+            ><i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
+        <div class="aboutbtn2">  
+            <button type="submit" class="schdulebtn" href="">Get Schedule</button>
+        </div>
+      </div>
+    </section>
+    <section class="offercontainer" id="offerContainer">
+      <div class="offercolumn1">
+        <h1>
+          We give you special <br />
+          offer experience
+        </h1>
+      </div>
+      <div class="offercolumn2">
+        <div class="offerbox1">
+          <div class="offersubbox">
+            <img src="/public/images/tub.jpg" alt="" srcset="" />
+            <div class="offerclaimblock">
+              <a href="">Claim Today</a><i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="offernameblock">
+              <h3>Tub/Shower System</h3>
+              <span class="desc">12 Months</span><span class="desc">.</span
+              ><span class="desc">0% Interest Financing</span>
+            </div>
+            <div class="offerpriceblock">
+              <i class="fas fa-tags"></i>
+              <span class="price">$1000</span><span class="off">OFF</span>
+            </div>
+          </div>
+          <div class="offersubbox">
+            <img src="/public/images/roof.jpg" alt="" srcset="" />
+            <div class="offerclaimblock">
+              <a href="">Claim Today</a><i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="offernameblock">
+              <h3>Roofing Project</h3>
+              <span class="desc">12 Months</span><span class="desc">.</span
+              ><span class="desc">0% Interest Financing</span>
+            </div>
+            <div class="offerpriceblock">
+              <i class="fas fa-tags"></i>
+              <span class="price">$1200</span><span class="off">OFF</span>
+            </div>
+          </div>
+        </div>
+        <div class="offerbox2">
+          <div class="offerbox2subbox">
+            <img src="/public/images/window.jpg" alt="" srcset="" />
+            <div class="offerclaimblock">
+              <a href="">Claim Today</a><i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="offernameblock">
+              <h3>Window Installation</h3>
+              <span class="desc">12 Months</span><span class="desc">.</span
+              ><span class="desc">0% Interest Financing</span>
+            </div>
+            <div class="offerpriceblock">
+              <i class="fas fa-tags"></i>
+              <span class="price">$1250</span><span class="off">OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Testimonial-->
+<section class="testimonial">
+  <h1>Our Happy Customers</h1>
+  <p>All casing sonsectures dummy content</p>
+  <div class="testimonial-boxes">
+    <div class="testimonial-content-boxes">
+      <div class="testimonial-content-box">
+        <div class="testimonial-subbox testimonial-subbox1">
+          <div class="avtar">
+            <img src="/public/images/julie.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>         
+          <div>
+           <h4>Salmah Sulyah</h4>
+           <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+           </div>
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+        <hr>
+        <div class="testimonial-subbox testimonial-subbox2">
+          <div class="avtar">
+            <img src="/public/images/salmah.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>
+          <div>
+           <h4>Robin Patra</h4>
+           <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i></div>           
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+      </div>
+      <div class="testimonial-content-box">
+        <div class="testimonial-subbox testimonial-subbox1">
+          <div class="avtar">
+            <img class="subrat" src="/public/images/salmah.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>         
+          <div>
+           <h4>Subrat Markos</h4>
+           <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+           </div>
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+        <hr>
+        <div class="testimonial-subbox testimonial-subbox2">
+          <div class="avtar">
+            <img class="peter" src="/public/images/salmah.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>
+          <div>
+           <h4>Peter Parker</h4>
+           <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i></div>           
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+      </div>
+      <div class="testimonial-content-box">
+        <div class="testimonial-subbox testimonial-subbox1">
+          <div class="avtar">
+            <img src="/public/images/deric.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>         
+          <div>
+           <h4>Deric paul</h4>
+           <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+           </div>
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+        <hr>
+        <div class="testimonial-subbox testimonial-subbox2">
+          <div class="avtar">
+            <img src="/public/images/julie.jpg" alt="" srcset="" height="50px" width="50px">
+          </div>
+          <div>
+           <h4>Alice Perry</h4>
+           <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i></div>           
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio.</q>
+          </div> 
+        </div>
+      </div>
+      <div class="btns">
+        <a href="javascript:void(0)" class="btn" onclick="plusSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+        <a href="javascript:void(0)" class="btn" onclick="plusSlides(1)" ><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="map-box">
+      <img src="/public/images/map.png" alt="" srcset="">
+    </div>
+  </div>
+</section>
+<!-- contact -->
+<section class="contact" id="contactContainer">
+  <div class="contact-box">
+    <h1>
+      Have a plan to reconcept?
+    </h1>
+    <p>
+      We are happy to hear your dreams and hopefully we can realize that
+    </p>
+    <i class="fas fa-headset fa-2x"></i>
+    <span>Call Us +6280119821</span>
+  </div>
+  <img src="/public/images/contact.jpg" alt="" srcset="">
+</section>
+<!-- footer -->
+<footer>
+ <div class="footer-box1">
+   <a href="" class="policy">Privacy Policy</a>
+   <a href="" class="sitemap">Site Map</a>
+ </div>
+ <div>
+
+ </div>
+ <div class="footer-box2">
+   <span class="copyright">&copy; 2012 - 2021 Muening Corp</span>
+ </div>
+ <div>
+   
+ </div>
+ <div class="footer-box3">
+  <i class="fab fa-youtube-square"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-instagram-square"></i>
+ </div>
+</footer>
+<script src="/public/javascript/index.js"></script>  
+<script src="/public/javascript/counter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Solution Admin Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/css/admin.css" />
+  </head>
+  <body>
+    <section class="admin-container">
+      <div class="navbar">
+        <div>
+          <h3>Schedule</h3>
+          <p>23 schdules find</p>
+        </div>
+        <div>
+          <i class="far fa-bell"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="logo-item"><a href="">muening</a><span>.</span></div>
+        <div class="dummy1"></div>
+        <div class="menu-item">
+          <a href=""><i class="fas fa-columns"></i>Dashboard</a>
+          <a href=""><i class="far fa-calendar-alt"></i>Schdule</a>
+          <a href=""><i class="far fa-clock"></i>Statistic</a>
+          <a href=""><i class="fas fa-cubes"></i>Product</a>
+          <a href=""><i class="far fa-sticky-note"></i>Stock</a>
+          <a href=""><i class="fas fa-tags"></i>Offer</a>
+        </div>
+        <div class="dummy2"></div>
+        <div class="social-item">
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Google</a>
+        </div>
+      </div>
+      <div class="content-box">
+        <table id="clients">
+          <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Date</th>
+            <th>Project Type</th>
+            <th>Description</th>
+          </tr>
+          <%clients.forEach(function(client){%>
+          <tr>
+            <td>#2634</td>
+            <td><%=client.name%></td>
+            <td><%=client.phone%></td>
+            <td><%= date%></td>
+            <td><%=client.option%></td>
+            <td><%=client.pDesc%></td>
+          </tr>
+          <%})%>         
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
+
